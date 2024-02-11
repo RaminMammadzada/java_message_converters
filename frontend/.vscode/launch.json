@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Webpack",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+      "args": [
+        "--config",
+        "webpack.config.js",
+        "--mode",
+        "development",
+        "--watch"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/dist/**/*.js"
+      ],
+      "sourceMaps": true,
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "runtimeExecutable": "/usr/local/bin/node",
+      "runtimeArgs": [
+        "--inspect-brk"
+      ]
+    }
+  ]
+}

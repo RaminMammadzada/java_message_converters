@@ -1,0 +1,45 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+	  {
+		"label": "start",
+		"type": "shell",
+		"command": "npm",
+		"args": ["start"],
+		"group": {
+		  "kind": "build",
+		  "isDefault": true
+		},
+		"presentation": {
+		  "reveal": "always",
+		  "panel": "dedicated"
+		}
+	  },
+	  {
+		"label": "build",
+		"type": "shell",
+		"command": "npm",
+		"args": ["run", "build"],
+		"group": "build",
+		"presentation": {
+		  "reveal": "always",
+		  "panel": "dedicated"
+		}
+	  },
+	  {
+		"label": "test",
+		"type": "shell",
+		"command": "npm",
+		"args": ["test"],
+		"group": {
+		  "kind": "test",
+		  "isDefault": true
+		},
+		"presentation": {
+		  "reveal": "always",
+		  "panel": "dedicated"
+		}
+	  }
+	]
+  }
+  
